@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="way_points_manager" name="way_points_manager" type="node.py" output="screen" required="true">
+        <rosparam command="load" file="$(find way_points_manager)/config/sample.yaml" />
+    </node>
+</launch>
